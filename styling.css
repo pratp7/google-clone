@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .links {
+  margin: 1em;
+  display: flex;
+  justify-content: flex-end;
+  /* text-align: center; */
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  padding: 10px;
+}
+
+header #nav-padd {
+  padding: 10px;
+}
+
+header img {
+  max-width: 1.3em;
+  height: 1.3em;
+}
+
+header #button {
+  background-color: #4684ef;
+  color: #ffff;
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-weight: bold;
+  border-style: none;
+  font-size: 12px;
+  /* line-height: 22px; */
+}
+
+header #link-hover:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
+}
+
+section .main-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section img {
+  width: 22em;
+  height: auto;
+  margin-bottom: -3em;
+}
+
+section #searchbar {
+  border-radius: 20px;
+  width: 40em;
+  height: 3em;
+  margin-bottom: 2em;
+  padding: 0 3em;
+  background: url(Images/search.png) no-repeat 3%,
+    url(Images/voice\ search.png) no-repeat 97%;
+  border: 2px #aaaa solid;
+}
+
+section .buttons {
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #ffffff;
+  padding: 9px 16px;
+  border-radius: 4px;
+  border-color: rgba(248, 249, 250, 0.2);
+}
+
+section .buttons:hover {
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+section p {
+  font-size: 13px;
+  margin: 1.5em;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: start;
+}
+footer .nav-bar1 {
+  background-color: rgba(248, 249, 250, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+}
+footer .nav-bar2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(248, 249, 250, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  padding: 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 600px) {
+  section img {
+    width: 18em;
+    height: auto;
+    margin-bottom: -3em;
+  }
+
+  section #searchbar {
+    border-radius: 20px;
+    width: 22em;
+  }
+
+  section p {
+    font-size: 11px;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .nav-bar2 {
+    flex-direction: column;
+  }
+}
